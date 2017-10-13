@@ -1,90 +1,219 @@
 <!DOCTYPE html>
 <html>
+
+    <!-- The head is where the meta links as well as any external links will be placed in html -->
   <head>
-    <title>Aloha apparel</title>
-    <link rel="stylesheet" href="style.css"/>
-    <meta charset="UTF-8">
-    </head>
-  
-    <!--All the content will appear after body tag-->
 
-    <body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- the title that will appear on the browser -->
+
+    <title>Aloha Apparel</title>
+
+    <!-- CSS stylesheet link -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- CSS fonts -->
+    
+    
+
+  </head>
      
-      <!-- navigation and logo -->
-   
+       <!-- body of the website; insert all content visible in viewport -->
+
+       <body>
+          
+        <!-- header is one of the website sections; insert the company logo, site navigation and shopping cart icon -->
+
+        <header>
+
+            <!-- logo -->
+
+            <img class="logo" src="images/aloha-logo.svg" alt="aloha apparel logo">
+           
+            <!-- site navigation -->
+            <nav>
+                <a href="/about/">About</a>
+                <a href="/shop/">Shop</a>
+                <a href="/featured/">featured</a>
+                <a href="/updates/">updates</a>
+              </nav>
+             
+             <!-- shopping cart -->
+              
+            <img class="cart" src="images/cart-icon.svg" alt="Shopping Cart Icon">
+
+        </header>
+         
+        <!-- hero image and text; images are found on CSS -->
+
+        <section class="hero">
+           
+           <h1><i>New</i>Collection</h1>  
+           <h2 class="spring-summer">Spring/Summer 2017</h2>
+
+        </section>
+       
+        <!-- div indicating to user company bio -->
+
+        <div class="bio">
+            
+          <div class="handcrafted">
+            <h2><i>Hand-Crafted</i><b>Styles</b></h2>
+          </div>
+
+          <div class="sell">
+            <p class="sellsonly" ><i class="italic">Aloha Apparel Co.</i>sells only the finest ready-to-travel clothing.</p>
+          </div>   
+
+          <div class= "brousecurrent">
+            <p class="below">Browse our current selection of products or sign-up for updates below</p>
+          </div>  
+
+        </div>
+           
+        <!-- Div to contain the heading that name's the scroll-bar -->
+
+      
+        <!-- Div named "categories" to contain the company's menu items; images are clickable links well not actually but seems like it -->
+
+        <div class="categories">
+
+          <!-- MEN'S -->
+          <div class="mens">
+            <a href="/">men's</a></div>
+
+
+          <!-- TREND'S -->
+         <div class="trends">
+           <a href="/">trends</a></div>
+
+          <!-- GLASSES -->
+          <div class="glasses"><a href="/">glasses</a></div>
+
+          <!-- sale -->
+          <div class="sale"><a href="/">sale</a></div>
+
+          <!-- bags -->
+          <div class="bags"><a href="/">bags></a></div>
+ 
+          <!-- womens -->
+          <div class="womens"><a href="/">women's</a></div>
+       
+        </div>
+
+         <!-- Div to contain the heading that name's the scroll-bar -->
+
+         <div class="mostloved">
+            
+                     <h2><i>Most-Loved</i><b>Products</b></h2>
+                     
+                    </div>
+
+          <!-- sroll menu and individual items -->
+          <div class="scroll">
+             <!-- beginning of list items --> 
+            <ul>
+                  
+                 <!--Red Dress -->
+                  <li>Dresses
+                    <img src="images/checked-stretch-dress.jpg" alt="Checked Stretch dress">
+                    <h3>Stretch Knit Dress</h3>
+                    <p>$169.00</p>
+                  </li>
+                  
+                    <!-- Backpack -->
+                    <li>Blue Hipster Back Pack
+                        <img src="images/blue-hipster-backpack.jpg" alt="blue hipster backpack">
+                        <h3>Blue Hipster Backpack</h3>
+                        <p>$169.00</p>
+                      </li>
+                  
+                      <!-- Overalls -->
+                      <li>Denim Overalls
+                          <img src="images/demin-overall-shorts.jpg" alt="demin overall shorts">
+                          <h3>Demin-overall shorts</h3>
+                          <p>$169.00</p>
+                        </li>
+
+                        <!-- Pink dress -->
+                          <li>Pink-dotted dress
+                          <img src="images/pink-dotted-dress.jpg" alt="pink dotted dress">
+                          <h3>Pink-dotted dress</h3>
+                            <p>$169</p>
+                          </li>
+                   </ul>
+                  
+          </div>
+          
+            <!-- grey color bar that seperates scroll and footer -->
+                    <div class="grey"></div>
+
+          <!-- Sign up section; contains an email link as well as a button ; wave background image -->
+          
+          <div class="signup">
+             
+            
+            
+            <!-- Sign up information -->
+             <h2><i>Sign-up</i><b>Updates</b></h2>
+            
+             <p class="subsribe">
+              Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unscrubscribe at any time.
+             </p>
+          
+            <!-- email form -->
+            <form>
+              <div class="emailBox">
+                <label for="emailAddress">Sign-up</label>
+                <input id="emailAddress" type="email" placeholder="example@email.com">
+              </div>
+            </form>
+
         
-        <nav>
-          <a href="/about/">About</a>
-          <a href="/shop/">Shop</a>
-          <a href="/featured/">featured</a>
-          <a href="/updates/">updates</a>
-        </nav>
-      
-      <img class="logo"
-        src="images/aloha-logo.svg"
-        alt="aloha apparel logo"/>
-      
-    <!--Hero section-->
-   <section class="hero">
-  
-    <h2>New Collection</h2>
-    <h2>Spring/Summer 2017</h2>
-  </section>
-      <!-- Hand-Crafted Styles-->
-    <div>
-        <h2>Hand-Crafted Styles!!!</h2>
-        
-         <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below</p></div> 
-     
-      <h2>Most-Loved Products</h2>
-      <div class="container">
-      <ul>
-        <li>Dresses
-          <img src="images/checked-stretch-dress.jpg" alt="Checked Stretch dress">
-          <h3>Stretch Knit Dress</h3>
-          <p>$169.00</p>
-        </li>
-          <li>Blue Hipster Back Pack
-              <img src="images/blue-hipster-backpack.jpg" alt="blue hipster backpack">
-              <h3>Blue Hipster Backpack</h3>
-              <p>$169.00</p>
-            </li>
-            <li>Denim Overalls
-                <img src="images/demin-overall-shorts.jpg" alt="demin overall shorts">
-                <h3>Demin-overall shorts</h3>
-                <p>$169.00</p>
-              </li>
-                <li>Pink-dotted dress
-                <img src="images/pink-dotted-dress.jpg" alt="pink dotted dress">
-                <h3>Pink-dotted dress</h3>
-                  <p>$169</p>
-                </li>
-         </ul>
-        </div>
-     
+          </div>
 
-         <!-- footer content -->
-         <div class="container">
-         <footer>
-          <div>
-          <h3>Sign-up for Updates</h3>
-         </div>
-        </div>
-      <div class="email"><a href="mailto:name@email.com">Sign-up for updates</a>
-        </div>
-     
-     <form>
-       <div class="emailBox">
-         <label for="emailAddress">Sign-up</label>
-         <input id="emailAddress" type="email" placeholder="example@email.com">
-       </div>
+          <!-- footer section with links as well as social media icons -->
+          <footer>
+             
+            <div class="contact-info">
+            <p class="copyright">&copy; 2016 Apparel Co.</p>
+            <p>Powered by HTML and CSS</p>
 
-     </form>
+            <!-- contact information -->
+            <p class="contact">604-604-6040.
+              <a href="mailto:name@email.com">info@alohaapparel.com</a>
+            </p>
+          
+            <!-- Address -->
+            <p class="address">1490 W Broadway</p>
+            <p>Vancouver, BC, Canada</p>
+          </div>
+            <!-- Social Media Icons; assuming they are links -->
+            
+            <div class="social-media">
+              
+              <!-- facebook -->
+              <a href="/"><i class="fa fa-facebook" aria-hidden="true"><span>Facebook</span></i>
+              </a>
 
-      
-      <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
-      <p>© 2017 Aloha Apparel Co.</p>
-      <p>604-604-6040.</p>
-    </footer>
-    </body>
+              <!-- twitter -->
+              <a href="/"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
+                   
+              <!-- Instagram -->
+              <a href="/"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+
+              <!-- Pinterest -->
+              <a href="/"><i class="fa fa-pinterest-p" aria-hidden="true"></i><span>Pinterest</span></a>
+
+              <!-- Google -->
+              <a href="/"><i class="fa fa-google" aria-hidden="true"></i><span>Google</span></a>
+          </div>
+
+          </footer>
+          <!-- JS links -->
+          <script src="scripts.js">
+          </script>
+      </body>
+
 </html>
