@@ -59,15 +59,16 @@ table {
 body {
  display: flex;
  width: 100vw;
- text-align: center
+ text-align: center;
+ font-family: 'Playfair Display', serif;
 }
 }
 
 /* -- general style rules -- */
 
+/*
 a {
   display: flex;
-  justify-content: space-between; /*--may not be true for category section --*/
   text-transform: uppercase;
   text-decoration: none;
   color: #e2574c;
@@ -75,10 +76,10 @@ a {
   font-size: 12px;
 
 }
-
+*/
 
 /* -- header style rules from left to right [logo, nav, shopping cart -- */
-
+/*
 header {
   display: flex;
   flex-direction: row;
@@ -120,4 +121,34 @@ nav {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+*/
+
+/* Mobile footer */
+.footer {
+  display: flex;  
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;  
+  padding: 4%;
+  background-color: grey;
+  color: white; 
+}
+
+.multiplelineparagraph {
+  line-height: 44%;
+  margin: 1%;
+}
+.greyparagraph {
+  color: black;
+  margin: 1%;
+  line-height: 44%;
+}
+
+p {
+  margin: 2%;
+}
+p a {
+  color: white;
+  margin-left: 1%;
 }
