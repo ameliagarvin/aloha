@@ -123,8 +123,54 @@ nav {
   background-position: center;
 }
 */
+.signup {
+  display: flex;
+  flex-direction: column;   
+  justify-content: space-evenly;
+  width: 100%;
+  color: white;
+  font-style: normal;
+  margin-bottom: 1em;
+  font-family:  none;
+  font-size: 1.25em;
+  line-height: 2em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  font-family: 'Raleway' , sans-serif; 
+  height: -webkit-fill-available;
+  background-image: url("images/wave-bkgd.jpg");
+  background-repeat: no-repeat;
+  background-position: center;  
+  background-size: cover;
+}
 
+h2 {
+  font-family: Playfair;
+  font-size: 2em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+span {
+  padding: 1.5%;
+  font-style: italic;
+  font-size: 1sem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+input[type=email] {
+  border-radius: 2em;
+  font-family: 'Raleway' , sans-serif; 
+  border-style: none;
+  text-align: center;
+}
+
+button[type=submit] {
+  border-radius: 2em;
+  font-family: 'Raleway' , sans-serif; 
+  border-style: none;
+  background-color: #e2574c;
+  color: white; 
+}
 /* Mobile footer */
+/*
 .footer {
   display: flex;  
   flex-direction: column;
@@ -152,3 +198,5 @@ p a {
   color: white;
   margin-left: 1%;
 }
+*/
+
