@@ -123,6 +123,7 @@ nav {
   background-position: center;
 }
 */
+/*
 .handcrafted {
   display: flex;
   justify-content: center;
@@ -150,8 +151,8 @@ nav {
   font-weight: bold;  
   padding-left: .25em;
 }
+*/
 
-/*
 .mostloved {
   display: flex;
   justify-content: center; 
@@ -168,7 +169,7 @@ nav {
   font-style: normal;
   color: black;
 }
-*/
+
 /*
 .signup {
   display: flex;
