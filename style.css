@@ -57,7 +57,7 @@ table {
 @media all and (min-width: 600px) {
 
 body {
- display: flex;
+ /*display: flex;*/
  width: 100vw;
  text-align: center;
  font-family: 'Playfair Display', serif;
@@ -320,8 +320,7 @@ p a {
 }
 
 
-/* ---- 1024px ----*/
-
+/* ---- 1024px 
 @media all and (min-width: 1024px) {
   
 body {
@@ -516,7 +515,7 @@ h3 {
  div h2 {
   color: white;
 }
-  
+ --*/ 
   /* --------- email form ------ */
   
 footer {
