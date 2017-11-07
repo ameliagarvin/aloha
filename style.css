@@ -78,6 +78,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   font-family: "railway", sans-serif;
+  padding: 0 10px;
 }
 
 .logo {
@@ -392,6 +393,13 @@ p a {
 
 @media all and (min-width: 1240px) {
 
+ .logo {
+   background-position: left;
+ }
+
+ .cart {
+   background-position: right;
+ }
 
 }
 
