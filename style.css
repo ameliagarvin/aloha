@@ -82,19 +82,13 @@ header {
 }
 
 .logo {
-  width: 50%;
-  background-image: url("images/aloha-logo.svg");
-  background-size: 110px;
-  background-repeat: no-repeat; 
-  background-position: center; 
+  width: 50px;
+
 }
 
 .cart {
-  width: 50%;
-  background-image: url("images/cart-icon.svg");
-  background-repeat: no-repeat;
-  background-size: 60px;
-  background-position: center;
+  width: 100pxg;
+
 }
 
 nav {
@@ -106,7 +100,6 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 100px;
   width: 100vw;
 }
 
@@ -386,20 +379,27 @@ p a {
 
   nav {
     order: 0;
+  
   }
   
+  nav ul {
+    border-style: none;
+  }
  
   }
 
 @media all and (min-width: 1240px) {
 
  .logo {
-   background-position: left;
+  
  }
 
  .cart {
-   background-position: right;
+  
  }
 
+ul {
+  border-style: none;
+}
 }
 
