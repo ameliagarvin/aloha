@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Aloha Apparel</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="./lib/flickity/flickity.css" media="screen">
   <script src="https://use.fontawesome.com/41688b04f0.js"></script>
   
 </head>
@@ -45,30 +46,45 @@
 
   <section id="categories" class="categories">
     <ul>
-    <li class='rectangle mens'><a href="#">men's</li></a>
-    <li class='square trends'><a href="#">trends</a></li>
-    <li class='square glasses'><a href="#">glasses</a></li>
-    <li class='square sale'><a href="#">sale</a></li>
-    <li class='square bags'><a href="#">bags</a></li> 
-    <li class='rectangle womens'><a href="#">women's</a></li>
+      <li class='rectangle mens'><a href="#">men's</li></a>
+      <li class='square trends'><a href="#">trends</a></li>
+      <li class='square glasses'><a href="#">glasses</a></li>
+      <li class='square sale'><a href="#">sale</a></li>
+      <li class='square bags'><a href="#">bags</a></li> 
+      <li class='rectangle womens'><a href="#">women's</a></li>
     </ul>
   </section>
 
   <div id="mostloved" class="mostloved">
-    <h2>Most-Loved<span>Products</span></h2></div>
-  
+    <h2>Most-Loved<span>Products</span></h2>
+  </div>
+  <!-- TODO add all items into carousel -->
+  <ul class="main-carousel">
+    <li class="carousel-cell">
+      <img src="./images/stretch-knit-dress.jpg" alt="image of a stretch knit dress">
+      <p class="item-categories">Dresses</p>
+      <p class="item-name">Stretch Knit Dress</p>
+      <p class="item-price">$169.00</p>
+    </li>
+    <li class="carousel-cell">
+      <img src="./images/cotton-blue-shirt.jpg" alt="image of a cotton blue shirt">
+      <p class="item-categories">Shirts</p>
+      <p class="item-name">Cotton Blue Shirt</p>
+      <p class="item-price">$89.00</p>
+    </li>
+  </ul>
  
-  <section id="signup" class="signup">
-    <h2><span>Sign-up for</span>Updates</h2>
-    <p class="subsribe">Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unscubscribe at any time.</p>  
-
-  <form>
-    <div class="emailBox">
-    <input id="emailAddress" type="email" placeholder="example@email.com">
-    <button type="submit">Subsribe</button>
+  <section id="signup">
+    <div>
+      <h2><span>Sign-up for</span>Updates</h2>
+      <p class="subscribe">Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unscubscribe at any time.</p>  
     </div>
-  </form>
-
+    <form>
+      <div class="emailBox">
+      <input id="emailAddress" type="email" placeholder="example@email.com">
+      <button type="submit">Subsribe</button>
+      </div>
+    </form>
   </section> 
   
   <footer class="footer">
@@ -99,6 +115,7 @@
   </footer> 
 
 <script src="lib/jquery-3.2.1.min.js"></script>
+<script src="./lib/flickity/flickity.pkgd.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>

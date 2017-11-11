@@ -1,5 +1,10 @@
 $(function() {
-// Select all links with hashes
+  $('.main-carousel').flickity({
+    // options
+    cellAlign: 'left',
+    contain: true,
+    wrapAround: true,
+  });
 $('a[href*="#"]')
 // Remove links that don't actually link to anything
 .not('[href="#"]')
