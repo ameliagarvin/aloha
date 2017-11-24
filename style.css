@@ -215,7 +215,7 @@ header {
   display: flex;
 }
 .cart-box img {
-  width: 50%;
+  width: 120%;
 }
 
 nav {
@@ -273,7 +273,9 @@ a {
 
 /* categories */
 
-/* TODO make the images into links change font color to white */
+.categories {
+  width: 100%;
+}
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -294,7 +296,8 @@ li a {
 .rectangle {
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 100%;
+  height: 250px;
 }
 
 .square {
@@ -302,7 +305,7 @@ li a {
   justify-content: center;
   margin-bottom: 2%;
   margin-top: 0;
-  width: 25%;
+  width: 50%;
   height: 250px;
 }
 
@@ -427,7 +430,7 @@ li a {
 }
 h2 {
   font-family: Playfair, serif;
-  font-size: 1em;
+  font-size: 2em;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 span {
@@ -534,9 +537,42 @@ body {
   }
 
 @media all and (min-width: 1240px) {
+  /* header */
+  .cart-box img {
+    width: 33%;
+}
+.cart-box {
+  width: 25%;
+  padding-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.logo {
+  width: 13%;
+  padding-left: 10px;
+}
 
 
+/* hero */
 
+.hero h2 {
+  font-family: "playfairdisplay", serif;
+  line-height: 1.25em;
+  font-size: 2.5em;
+  text-transform: none;
+}
+.newcollection {
+  display: flex;
+  flex-direction: column;
+}
+.newcollection span {
+  font-family: "playfairdisplay", serif;
+  line-height: 1.25em;
+  font-size: 2.5em;
+  text-transform: none;
+  font-style: normal;
+}
+/* categories section */
 ul {
   border-style: none;
 }
@@ -617,6 +653,49 @@ li a {
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 2%;
+}
+
+/* sign up section */
+#signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  font-style: normal;
+  margin-bottom: 1em;
+  margin-top: 2em;
+  font-family: none;
+  font-size: 1.25em;
+  line-height: 2em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  font-family: 'Raleway' , sans-serif;
+  background-image: url(./images/wave-bkgd.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+input[type=email] {
+  border-radius: 2em;
+  font-family: 'Raleway' , sans-serif;
+  border-style: none;
+  text-align: left;
+  padding-left: 20px;
+  width: 52%;
+  height: 47px;
+}
+button[type=submit] {
+  border-radius: 2em;
+  font-family: 'Raleway' , sans-serif;
+  border-style: none;
+  background-color: #e2574c;
+  color: white;
+  position: absolute;
+  left: 51.75%;
+  width: 24%;
+  height: 39px;
+  top: 6%;
 }
 }
 
