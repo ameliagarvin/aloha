@@ -9,9 +9,11 @@ http://flickity.metafizzy.co
 .flickity-enabled:focus { outline: none; }
 
 .flickity-viewport {
+  width: 100%;
   overflow: hidden;
   position: relative;
   height: 100%;
+  margin-bottom: 2%;
 }
 
 .flickity-slider {
@@ -24,7 +26,7 @@ http://flickity.metafizzy.co
 
 .flickity-enabled.is-draggable {
   -webkit-tap-highlight-color: transparent;
-          tap-highlight-color: transparent;
+          /* tap-highlight-color: transparent; */
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;

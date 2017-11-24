@@ -228,11 +228,15 @@ nav ul {
   height: 100%;
   border-top: 1px solid grey; 
 }
+ nav li a {
+   font-size: 16px;
+   color: #e2574c;
+
+ }
 
 a {
   text-transform: uppercase;
   text-decoration: none;
-  color: #e2574c;
   margin: 20px;
   font-size: 12px;
 }
@@ -302,6 +306,16 @@ ul {
   font-family: 'raleway', Arial, sans-serif;
   }
 
+li a {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'raleway', Arial, sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .rectangle {
   display: flex;
   justify-content: center;
@@ -311,10 +325,10 @@ ul {
 .square {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  margin-bottom: 2%;
+  margin-top: 0;
   width: 50%;
   height: 250px;
-  border: 1px solid green;
 }
 
 .rectangle.mens {
@@ -323,6 +337,7 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   height: 300px;
+  margin-bottom: 2%;
 }
 
 .rectangle.womens {
@@ -360,6 +375,7 @@ ul {
   background-image: url("images/womens-category.jpg");
   background-size: contain;
   background-repeat: no-repeat;
+  margin-top: 2%;
 }
 
 /* another section */
@@ -418,6 +434,7 @@ ul {
   color: white;
   font-style: normal;
   margin-bottom: 1em;
+  margin-top: 2em;
   font-family:  none;
   font-size: 1.25em;
   line-height: 2em;
@@ -437,7 +454,7 @@ ul {
 }
 h2 {
   font-family: Playfair, serif;
-  font-size: 2em;
+  font-size: 1em;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 span {
@@ -465,23 +482,30 @@ button[type=submit] {
 
 /* footer */
 
-.footer {
-  display: flex;  
-  flex-direction: column;
-  justify-content: space-around;
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #242424;
+  font-family: "playfairdisplay", "Times New Roman", Times, serif;
   width: 100%;  
-  padding: 4%;
-  background-color: grey;
   color: white; 
 }
 
 .multiplelineparagraph {
   line-height: 44%;
   margin: 1%;
+  font-family: "playfairdisplay", "Times New Roman", Times, serif;
 }
 
+.location {
+  color: #969696;
+}
+.address {
+  color: #969696;
+}
 p {
   margin: 2%;
+  
 }
 p a {
   color: white;
@@ -514,13 +538,7 @@ p a {
 
 @media all and (min-width: 1240px) {
 
- .logo {
-  
- }
 
- .cart {
-  
- }
 
 ul {
   border-style: none;
