@@ -8,59 +8,60 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="./lib/flickity/flickity.css" media="screen">
   <script src="https://use.fontawesome.com/41688b04f0.js"></script>
-  
 </head>
-
 <body>
-  
+<!-- header section -->
   <header>
-    
-    <img class="logo" src="images/aloha-logo.svg" alt="logo image">
-
-    <nav>
+      <img class="logo" src="images/aloha-logo.svg" alt="logo image">
       
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#categories">Shop</a></li>
-        <li><a href="#mostloved">featured</a></li>
-        <li><a href="#signup">updates</a></li>
-      </ul>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#categories">Shop</a></li>
+          <li><a href="#mostloved">featured</a></li>
+          <li><a href="#signup">updates</a></li>
+        </ul>
+      </nav>
+      
+      <div class="cart-box">
+        <img class="cart" src="images/cart-icon.svg" alt="cart image">  
+      </div>
 
-    </nav>
-    <div class="cart-box">
-      <img class="cart" src="images/cart-icon.svg" alt="cart image">  
-    </div>
-  </header> 
-  
+  </header>
+<!-- hero section -->
   <section class="hero">
     <div class="newcollection">
-    <h1>New Collection</h1>  
-    <h2>Spring/Summer<span>2017</span></h2>
-  </div>
-    </section>
-  
-  
-  <div id="about" class="handcrafted"><h2>Hand-Crafted<span>Styles</span></h2><p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p></div>
+      <h1>New Collection</h1>  
+      <h2>Spring/Summer<span>2017</span></h2>
+    </div>
+  </section>
 
-  <!-- TODO add ul and li + add links -->
+<!-- about company information -->
+<div id="about" class="handcrafted">
+  <h2>Hand-Crafted<span>Styles</span></h2>
+  <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
+</div>
 
-  <div id="categories" class="categories">
-    <ul>
-      <li class='rectangle mens'><a href="#">men's</a></li>
-      <li class='square trends'><a href="#">trends</a></li>
-      <li class='square glasses'><a href="#">glasses</a></li>
-      <li class='square sale'><a href="#">sale</a></li>
-      <li class='square bags'><a href="#">bags</a></li> 
-      <li class='rectangle womens'><a href="#">women's</a></li>
-    </ul>
-  </div>
+<!-- categories -->
 
-  <!-- TODO add all items into carousel -->
+<div id="categories" class="categories">
+  <ul>
+    <li class='rectangle mens'><a href="#">men's</a></li>
+    <li class='square trends'><a href="#">trends</a></li>
+    <li class='square glasses'><a href="#">glasses</a></li>
+    <li class='square sale'><a href="#">sale</a></li>
+    <li class='square bags'><a href="#">bags</a></li> 
+    <li class='rectangle womens'><a href="#">women's</a></li>
+  </ul>
+</div>
 
-  <div id="mostloved" class="mostloved">
-    <h2>Most-Loved<span>Products</span></h2>
-  </div>
+<!-- clothes menu  -->
 
+<div id="mostloved" class="mostloved">
+  <h2>Most-Loved<span>Products</span></h2>
+</div>
+
+<div class="clothes-menu">
   <ul class="main-carousel">
     <li class="carousel-cell">
       <img src="./images/stretch-knit-dress.jpg" alt="image of a stretch knit dress">
@@ -105,7 +106,10 @@
       <p class="item-price">$99.00</p>
     </li>
   </ul>
- 
+</div>
+
+  <!-- sign up section -->
+
   <section id="signup">
     <div>
       <h2><span>Sign-up for</span>Updates</h2>
@@ -118,37 +122,40 @@
       </div>
     </form>
   </section> 
-  
+
+<!-- footer -->
+
   <footer>
+    <div class="company-information">
+    <div class="company-name">
+      <p>&copy; 2016 Apparel Co.</p>
+      <p>Powered by HTML and CSS</p>
+     </div>
+      
+     <div class="contact-info">
+       <p>604-604-6040.<a href="mailto:name@email.com"></a></p>
+     </div>
 
-   <div class="multiplelineparagraph">
-    <p>&copy; 2016 Apparel Co.</p>
-    <p>Powered by HTML and CSS</p>
-   </div>
+     <div class="location">
+      <p>1490 W Broadway</p>
+      <p>Vancouver, BC, Canada</p>
+     </div>
+    </div>
 
-    <p>604-604-6040.<a href="mailto:name@email.com">info@alohaapparel.com</a></p>
-    
-   <div>
-    <p class="address">1490 W Broadway</p>
-    <p class="location">Vancouver, BC, Canada</p>
-   </div>
-   
-  <div class="icons">
-    <ul class="socialmedia">
-     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-     <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
-     </a></li>
-     <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-     <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
-    </ul>
-  </div>
+    <div class="social-media-links">
+      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
+      <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+    </div>
   </footer>
-  
 
-<script src="lib/jquery-3.2.1.min.js"></script>
-<script src="./lib/flickity/flickity.pkgd.min.js"></script>
-<script src="js/main.js"></script>
+
+  <script src="lib/jquery-3.2.1.min.js"></script>
+  <script src="./lib/flickity/flickity.pkgd.min.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>

@@ -48,6 +48,8 @@ table {
 }
 /*reset done*/
 
+/* embedded fonts */
+
 @font-face {
   font-family: 'playfairdisplay';
   src: url('./fonts/playfairdisplay-bold-webfont.eot');
@@ -57,11 +59,7 @@ table {
        url('./fonts/playfairdisplay-bold-webfont.svg#playfair_displaybold') format('svg');
   font-weight: bold;
   font-style: normal;
-
 }
-
-
-
 
 @font-face {
   font-family: 'playfairdisplay';
@@ -72,11 +70,7 @@ table {
        url('./fonts/playfairdisplay-bolditalic-webfont.svg#playfair_displaybold_italic') format('svg');
   font-weight: italic;
   font-style: bold;
-
 }
-
-
-
 
 @font-face {
   font-family: 'playfairdisplay';
@@ -87,11 +81,7 @@ table {
        url('./fonts/playfairdisplay-italic-webfont.svg#playfair_displayitalic') format('svg');
   font-weight: italic;
   font-style: normal;
-
 }
-
-
-
 
 @font-face {
   font-family: 'playfairdisplay';
@@ -105,9 +95,6 @@ table {
 
 }
 
-
-
-
 @font-face {
   font-family: 'raleway';
   src: url('./fonts/raleway-light-webfont.eot');
@@ -117,11 +104,7 @@ table {
        url('./fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
   font-weight: light;
   font-style: normal;
-
 }
-
-
-
 
 @font-face {
   font-family: 'raleway';
@@ -132,11 +115,7 @@ table {
        url('./fonts/raleway-lightitalic-webfont.svg#ralewaylight_italic') format('svg');
   font-weight: light;
   font-style: italic;
-
 }
-
-
-
 
 @font-face {
   font-family: 'raleway';
@@ -147,11 +126,7 @@ table {
        url('./fonts/raleway-medium-webfont.svg#ralewaymedium') format('svg');
   font-weight: normal;
   font-style: normal;
-
 }
-
-
-
 
 @font-face {
   font-family: 'raleway';
@@ -162,7 +137,6 @@ table {
        url('./fonts/raleway-mediumitalic-webfont.svg#ralewaymedium_italic') format('svg');
   font-weight: normal;
   font-style: italic;
-
 }
 
 /* screen reader */
@@ -181,20 +155,26 @@ table {
 * {
   box-sizing: border-box;
 }
-
-
-
-
-
-
-body {
-  
-   width: 100vw;
-   text-align: center;
-  }
  
 /* header */
+body {
+  text-align: center;
+}
 
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+nav {
+  width: 100%;
+  order: 1;
+}
+
+/* categories section */
 header {
   display: flex;
   flex-direction: row;
@@ -234,8 +214,7 @@ nav ul {
  nav li a {
    font-size: 16px;
    color: #e2574c;
-
- }
+}
 
 a {
   text-transform: uppercase;
@@ -265,7 +244,7 @@ a {
 }
 
 .hero h2 {
-  font-family: "playfairdisplay", serif; 
+  font-family: "playfairdisplay", "Times New Roman", serif;
   line-height: 1.25em;
   font-size: 1.5em;
   text-transform: none;
@@ -371,11 +350,9 @@ li a {
 
 .handcrafted h2 {
   padding-bottom: .5em;
-  font-family: Railway;
   font-style: italic; 
   font-size: 1.5rem;
   color: black;
-  width: 100%;
 }
 
 .handcrafted span {
@@ -389,9 +366,9 @@ li a {
   display: flex;
   justify-content: center; 
   padding: 1em; 
-  width: 100vw;
-  font-family: Playfair;
-  font-size: 2em;
+  width: 100%;
+  font-family: "playfairdisplay", "Times New Roman", serif;
+  font-size: 1em;
   font-style: italic;
   color: darkslategrey;
 }
@@ -409,7 +386,7 @@ li a {
   width: 100%;
   color: white;
   font-style: normal;
-  margin-bottom: 1em;
+  margin-bottom: .3em;
   margin-top: 2em;
   font-family:  none;
   font-size: 1.25em;
@@ -429,7 +406,7 @@ li a {
   font-family: "raleway", Arial, sans-serif;
 }
 h2 {
-  font-family: Playfair, serif;
+  font-family: "playfairdisplay", "Times New Roman", serif;
   font-size: 2em;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
@@ -466,23 +443,18 @@ button[type=submit] {
   height: 39px;
   top: 6%;
 }
-*/
+
 
 /* footer */
 
 footer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   background-color: #242424;
-  font-family: "playfairdisplay", "Times New Roman", Times, serif;
+  font-family: "playfairdisplay", "Times New Roman", serif;
   width: 100%;  
   color: white; 
-}
-
-.multiplelineparagraph {
-  line-height: 44%;
-  margin: 1%;
-  font-family: "playfairdisplay", "Times New Roman", Times, serif;
+  padding: 6% 0px;
 }
 
 .location {
@@ -491,17 +463,10 @@ footer {
 .address {
   color: #969696;
 }
-p {
-  margin: 2%;
-  
-}
-p a {
-  color: white;
-  margin-left: 1%;
-}
 
-.icons {
+.social-media-links a {
   list-style-type: none;
+  color: #FFF;
 }
 
 
@@ -533,7 +498,89 @@ body {
     width: 100%;
     height: 100%;
   }
- 
+ /* categories */
+
+ ul {
+  border-style: none;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  font-family: 'raleway', Arial, sans-serif;
+  }
+
+li a {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'raleway', Arial, sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+  margin-top: 0;
+  width: 50%;
+  height: 250px;
+}
+
+.rectangle.mens {
+  max-width: 100%;
+  background-image: url("images/mens-category.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  margin-bottom: 2%;
+}
+
+.rectangle.womens {
+  background-image: url("images/womens-category.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.square.trends {
+  background-image: url("images/trends-category.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.square.glasses {
+  background-image: url("images/glasses-category.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.square.sale {
+  background-image: url("images/sale-category.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.square.bags {
+  background-image: url("images/bags-category.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+.rectangle.womens {
+  background-image: url("images/womens-category.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 2%;
+}
   }
 
 @media all and (min-width: 1240px) {
@@ -663,7 +710,7 @@ li a {
   width: 100%;
   color: white;
   font-style: normal;
-  margin-bottom: 1em;
+  margin-bottom: .3em;
   margin-top: 2em;
   font-family: none;
   font-size: 1.25em;
