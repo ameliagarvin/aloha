@@ -711,63 +711,59 @@ li a {
 .rectangle {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 50%;
+  height: 300px;
 }
 
 .square {
   display: flex;
   justify-content: center;
-  margin-bottom: 2%;
   margin-top: 0;
-  width: 50%;
-  height: 250px;
+  width: 25%;
+  height: 300px;
 }
 
 .rectangle.mens {
-  max-width: 100%;
+  max-width: 50%;
   background-image: url("images/mens-category.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 300px;
-  margin-bottom: 2%;
+
 }
 
 .rectangle.womens {
   background-image: url("images/womens-category.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  margin: 0;
+  height: 300px;
 }
 
 .square.trends {
   background-image: url("images/trends-category.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .square.glasses {
   background-image: url("images/glasses-category.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .square.sale {
   background-image: url("images/sale-category.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .square.bags {
   background-image: url("images/bags-category.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat; 
 }
 
-.rectangle.womens {
-  background-image: url("images/womens-category.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: 2%;
-}
+
 
 /* sign up section */
 #signup {
