@@ -620,6 +620,7 @@ li a {
 footer {
   display: flex;
   flex-direction: row;
+  align-items: baseline;
   justify-content: space-between;
   font-size: 16px;
 }
@@ -643,6 +644,9 @@ footer {
 .social-media-links a {
   padding: 0;
   margin: 1% 0;
+}
+.social-media-links span {
+  font-size: 0;
 }
   }
 
@@ -806,6 +810,14 @@ button[type=submit] {
   width: 24%;
   height: 39px;
   top: 6%;
+}
+/* footer */
+footer {
+  align-items: baseline;
+}
+.social-media-links span {
+  font-size: 16px;
+  font-family: 'Raleway' , sans-serif;
 }
 }
 
