@@ -378,7 +378,30 @@ li a {
   font-style: normal;
   color: black;
 }
+/* flickity menu */
 
+.item-categories {
+  margin-bottom: 5%;
+  font-weight: 100;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-family: "railway-light", sans-serif;
+  
+}
+.item-name {
+  font-family: "playfairdisplay", "Times New Roman", serif;
+  color: #e2574c;
+  margin-bottom: 5%;
+}
+
+.item-price {
+  font-family: "railway-light", sans-serif;
+  font-weight: 100;
+  font-size: 10px;
+  margin-bottom: 5%;
+}
+
+/* sign up section */
 #signup {
   display: flex;
   flex-direction: column;   
