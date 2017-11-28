@@ -477,9 +477,17 @@ footer {
   font-family: "playfairdisplay", "Times New Roman", serif;
   width: 100%;  
   color: white; 
-  padding: 6% 0px;
+  padding: 15% 0px;
 }
-
+.contact-info {
+  margin-bottom: 5%;
+}
+.contact-info a{
+ color: red;
+}
+.company-name {
+  margin-bottom: 5%;
+}
 .location {
   color: #969696;
 }
@@ -487,6 +495,9 @@ footer {
   color: #969696;
 }
 
+.social-media-links {
+  margin-top: 5%;
+}
 .social-media-links a {
   list-style-type: none;
   color: #FFF;
@@ -603,6 +614,35 @@ li a {
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 2%;
+}
+
+/* footer styles */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.company-information {
+  margin-left: 2%;
+  text-align: left;
+}
+.company-information p {
+  margin-top: 2%;
+}
+
+.contact-info {
+  margin: 10% 0 30% 0;
+}
+
+.social-media-links {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+}
+.social-media-links a {
+  padding: 0;
+  margin: 1% 0;
 }
   }
 
