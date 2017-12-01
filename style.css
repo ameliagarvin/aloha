@@ -463,8 +463,25 @@ footer {
 .company-name {
   margin-bottom: 5%;
 }
+.company-name p{
+  margin: 1.5% 0;
+}
+.email {
+  margin: 5% 0;
+}
+.email a {
+  color: #FFF;
+  margin: 0;
+  font-size: 15px;
+  text-transform: none;
+  text-decoration: underline;
+}
 .location {
   color: #969696;
+  margin: 2% 0;
+}
+.location p {
+  margin: 1.5% 0;
 }
 .address {
   color: #969696;
@@ -472,11 +489,17 @@ footer {
 
 .social-media-links {
   margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+.social-media-links p {
+  margin: 0 1%;
 }
 .social-media-links a {
-  list-style-type: none;
-  color: #FFF;
+display: none;
 }
+
+
 
 
 @media all and (min-width: 600px) {
@@ -513,13 +536,20 @@ body {
 footer {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
-  justify-content: space-between;
   font-size: 16px;
+  padding: 10% 0px;
 }
 .company-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   margin-left: 2%;
+  margin-right: 30%;
   text-align: left;
+}
+
+.company-name {
+  margin: 0;
 }
 .company-information p {
   margin-top: 2%;
@@ -536,11 +566,17 @@ footer {
 }
 .social-media-links a {
   padding: 0;
-  margin: 1% 0;
+  margin: 1% 0 1% 15%;
+  display: block;
+  font-family: 'Raleway' , sans-serif;
+  color: #FFF;
+  text-transform: none;
 }
-.social-media-links span {
-  font-size: 0;
+.social-media-links p {
+  display: flex;
+  margin: 2% 0;
 }
+
   }
 
 @media all and (min-width: 1240px) {
@@ -637,11 +673,18 @@ button[type=submit] {
 }
 /* footer */
 footer {
-  align-items: baseline;
+ padding: 3% 0;
+ }
+
+.company-information {
+  margin-right: 70%;
 }
-.social-media-links span {
-  font-size: 16px;
-  font-family: 'Raleway' , sans-serif;
+.social-media-links {
+  margin-top: 0;
 }
+.social-media-links p {
+  margin: 5% 0;
+}
+
 }
 
