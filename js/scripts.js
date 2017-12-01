@@ -1,5 +1,6 @@
-$(function(){
-  $('#emailform').on('submit', function(event) {
+$(document).ready(function() {
+  
+  $('#submit').on('click', function(event) {
     event.preventDefault();
     if ( !$('#emailAddress').val() == '') {
       alert('Thank you for subscribing!');
