@@ -567,6 +567,19 @@ body {
     width: 100%;
     height: 100%;
   }
+/* carousel */
+.flickity-viewport {
+  padding-top: 5%;
+}
+li.carousel-cell {
+  position: relative;
+  width: 50%;
+  height: 495px;
+}
+button.add-to-cart {
+  top: -1%;
+  right: 1%;
+}
  /* sign up section */
  input[type=email] {
    width: 80%;
@@ -633,7 +646,7 @@ footer {
   padding-right: 10px;
   display: flex;
   justify-content: center;
-  margin-top: 2%;
+  margin-top: 1%;
 }
 .logo {
   width: 13%;
@@ -661,6 +674,29 @@ nav li {
   text-transform: none;
   font-style: normal;
 }
+/* hand crafted */
+
+.handcrafted h2 {
+  font-size: 2.5em;
+  padding: 0;
+}
+.handcrafted p {
+  width: 640px;
+  margin: 0 auto;
+}
+/* most loved */
+.mostloved {
+ margin: 5% 0 .5% 0;
+}
+.mostloved h2{
+font-size: 2.5em;
+}
+/* carousel */
+
+button.add-to-cart {
+  top: -5%;
+  right: 0;
+}
 /* categories */
 
 .categories {
@@ -673,6 +709,13 @@ nav li {
 }
 .item-wide {
   grid-column-end: span 2;
+}
+/* carousel */
+
+li.carousel-cell {
+  position: relative;
+  width: 25%;
+  height: 495px;
 }
 
 /* sign up section */
